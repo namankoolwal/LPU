@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <input type="text"  id="txt" placeholder="ENTER NAME">
+    <input type="button" onclick="clk()" value="SUBMIT">
+    <p id="demo"></p>
+</body>
+<script>
+   function clk(){
+    var x=document.getElementById("txt").value;
+        alert("YOUR NAME IS: "+ x);
+        //document.write("HELLO " +x );
+        //document.write("<br> YOU ARE DOING YOUR MCA FROM LPU <br> HAVE A GREAT LEARNING!");
+        document.getElementById("demo").innerHTML="<br> YOU ARE DOING YOUR MCA FROM LPU <br> HAVE A GREAT LEARNING!";
+    }
+</script>
+</html>

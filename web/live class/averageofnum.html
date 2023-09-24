@@ -1,0 +1,34 @@
+<!-- AVERAGE OF NUMBERS -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form align="center">
+        <input type="text" name="" id="txt" placeholder="ENTER A NUMBER">
+        <input type="button" value="PRINT" onclick=printn()>
+    </form>
+    <p id="demo"></p>
+</body>
+<script>
+    
+    function printn() {
+        var t = document.getElementById("txt").value;
+        let a = 0;
+        for (i = 1; i <= t; i++) {
+            a = a + i;
+            avg = a / t
+            document.getElementById("demo").innerHTML = "SUM OF NUMBER IS: " + a + "<br>";
+            document.getElementById("demo").innerHTML += "AVERAGE IS: " + avg + "<br>";
+        }
+    }
+
+</script>
+
+</html>

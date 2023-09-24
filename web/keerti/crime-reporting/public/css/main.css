@@ -1,0 +1,12 @@
+#content div {
+  margin-top: 20px;
+}
+button {
+  margin: 5px;
+}
+.btn {
+  margin: 12;
+  /* background-Color: "transparent" */
+  background-color: transparent;
+ 
+}

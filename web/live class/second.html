@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 2</title>
+</head>
+
+<body>
+    <form>
+        Username: <input type="text" id="text1" placeholder="enter username">
+        <br>
+        Email: <input type="email" id="text2" placeholder="enter email">
+        <br>
+        Course: <input type="text" id="text3" placeholder="enter course">
+        <br>
+        Age: <input type="number" id="age" placeholder="enter age">
+        <br>
+        <input type="button" value="next" onclick="local();">
+    </form>
+</body>
+
+<script>
+    function local() {
+        nam = document.getElementById("text1").value;
+        localStorage.setItem('name', nam);
+        email = document.getElementById("text2").value;
+        localStorage.setItem('email', email);
+        course = document.getElementById("text3").value;
+        localStorage.setItem('course', course);
+        age = document.getElementById("age").value;
+        localStorage.setItem('age', age);
+
+        location.href = 'third.html';
+    }
+</script>
+
+</html>

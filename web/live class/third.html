@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 3</title>
+</head>
+<body >
+  <p id="Na"> your name: </p>
+    <p id="email">your email: </p>
+    <p id="course">your course: </p>
+    <p id="Age"> your age:</p>
+</body>
+<script>
+    let nam=localStorage.getItem('name');
+    let email= localStorage.getItem('email')
+    let course= localStorage.getItem('course')
+    let age=localStorage.getItem('age')
+    document.getElementById("Na").innerHTML += nam;
+    document.getElementById("email").innerHTML +=email;
+    document.getElementById("course").innerHTML +=course;
+    document.getElementById("Age").innerHTML +=age;
+</script>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function over(){
+         document.write("mouse over");
+         //document.getElementById("demo").innerHTML="mouse over";
+     }
+        function out(){
+         document.write("mouse outt");
+         //document.getElementById("demo").innerHTML="mouse outtt";
+     
+        }
+        var x= 16+4+"volvo" ;
+        document.write(x);
+     </script>
+     <style>
+        p{
+            border-top-style: dotted;
+        }
+     </style>
+</head>
+<body>
+    <p> take here</p>
+   <div id="demo" onmousemove="over()" onmouseout="out()">
+   <h2>this is inside div tag</h2>
+   </div>
+   <p id="demo"></p>
+</body>
+
+</html>
