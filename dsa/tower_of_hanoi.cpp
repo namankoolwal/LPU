@@ -17,6 +17,7 @@ void towers(int num, char frompeg, char topeg, char auxpeg)
     {
         std::cout<<"\n Movers disk 1 from peg "<<frompeg<<" to peg "<<topeg ;
         return;
+        
     }
     towers(num-1, frompeg, auxpeg, topeg);
     std::cout<<"\n Move disk "<<num<<" from peg "<<frompeg<<" to peg "<<topeg;
