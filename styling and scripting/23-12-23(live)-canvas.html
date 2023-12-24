@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Canvas element in HTML5</title>
-</head>
-<body>
 
-    <canvas id="myCanvas" width="300" height="200" style="border: 1px solid black;"></canvas>
+<head>
+    <title>Canvas element in HTML5</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="300" height="200" style="border: 1px solid black"></canvas>
 
     <script>
-            var canvas= document.getElementById("myCanvas");
-            var context= canvas.getContext("2d");
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+        //    **************draw a line**************
+        // context.moveTo(50,150);
+        // context.lineTo(250,50);
+
+        //   **************draw a arc**************
+
+        // context.arc(centerX, center Y, radius, startringAngle, endinAngle, counterclockwise)
+
+        // context.arc(150,150,80,1.2*Math.PI,1.8*Math.PI,false);
+
+        //***********draw a rectangle***********
+
+        context.rect(50,50,200,100);
+        context.fillStyle="red";
+        context.fill();
+        context.lineWidth=5;
+        context.strokeStyle="blue";
+
+        // ***********draw a circle***********
+
+        // context.arc(X,Y,radius, 2*Math.PI,false);
+
+        // context.arc(100,100,30, 2*Math.PI,false);
+
+        // ***********draw a text***********
+        // context.font = "bold 30px Arial";
+        //   context.fillStyle = "red";
+        //   context.fillText("Hello World", 10, 50);
+        // context.strokeStyle = "red";
+        // context.strokeText("Hello World", 10, 50);
+
+
+        context.stroke();
     </script>
-</body> 
+</body>
 
 </html>
