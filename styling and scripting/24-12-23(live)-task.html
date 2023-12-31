@@ -1,27 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Canvas Logo</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-    <canvas id="can" width="400" height="400" style="border: 1px solid black"></canvas>
+    <canvas id="logoCanvas" width="200" height="200"></canvas>
 
-<script>
-    var canvas = document.getElementById("can");
-    var ctx = canvas.getContext("2d");
+    <script>
+        const canvas = document.getElementById('logoCanvas');
+        const ctx = canvas.getContext('2d');
 
-    ctx.fillStyle = "red";-
-    ctx.fillRect(50, 50, 200, 100);
-    ctx.fill();
+        ctx.fillStyle = 'blue';
+        ctx.beginPath();
+        ctx.arc(100, 100, 80, 0, 2 * Math.PI);
+        ctx.fill();
 
-    ctx.fillStyle = "blue";
-    ctx.beginPath();
-    ctx.arc(200, 250, 50, 0, 2 * Math.PI);
-    ctx.fill();
+        ctx.fillStyle = 'white';
+        ctx.beginPath();
+        ctx.arc(100, 100, 60, 0, 2 * Math.PI);
+        ctx.fill();
 
-</script>
+        ctx.fillStyle = 'blue';
+        ctx.beginPath();
+        ctx.arc(100, 100, 40, 0, 2 * Math.PI);
+        ctx.fill();
 
+        ctx.fillStyle = 'white';
+        ctx.beginPath();
+        ctx.arc(100, 100, 20, 0, 2 * Math.PI);
+        ctx.fill();
+    </script>
 </body>
 </html>
