@@ -1,0 +1,58 @@
+body{
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.formgrp {
+    margin-bottom: 20px;
+}
+
+.formgrp label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formgrp input[type="text"],
+.formgrp input[type="email"],
+.formgrp select {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formgrp input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.formgrp .checkbox-label {
+    font-weight: normal;
+}
+
+.formgrp .submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formgrp .submit-btn:hover {
+    background-color: #45a049;
+}

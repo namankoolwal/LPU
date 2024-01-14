@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="(14-01-24)style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Travel Reservation Form</h2>
+        <form id="reservationForm" onsubmit="return validateForm()">
+            <div class="formgrp">
+                <label for="fullname">Full name*</label>
+                <input type="text" id="fullname" name="fullname">
+            </div>
+            <div class="formgrp">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="formgrp">
+                <label for="package">Select Tour Package*</label>
+                <select id="package" name="package">
+                    <option value="">- Select Package -</option>
+                    <option value="goa">Goa</option>
+                </select>
+            </div>
+            <div class="formgrp">
+                <label for="arrival">Arrival date</label>
+                <input type="text" id="arrival" name="arrival">
+            </div>
+            <div class="formgrp">
+                <label for="persons">Number of persons*</label>
+                <input type="text" id="persons" name="persons" >
+            </div>
+            <div class="formgrp">
+                <label>What would you want to avail?*</label>
+                <div>
+                    <input type="checkbox" id="boarding" name="boarding">
+                    <label class="checkbox-label" for="boarding">Boarding</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="fooding" name="fooding">
+                    <label class="checkbox-label" for="fooding">Fooding</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="sightseeing" name="sightseeing">
+                    <label class="checkbox-label" for="sightseeing">Sightseeing</label>
+                </div>
+            </div>
+            <div class="formgrp">
+                <label for="coupon">Discount Coupon code</label>
+                <input type="text" id="coupon" name="coupon">
+            </div>
+            <div class="formgrp">
+                <label>Terms and conditions*</label>
+                <div>
+                    <input type="checkbox" id="agree" name="agree" >
+                    <label class="checkbox-label" for="agree">Agree</label>
+                </div>
+            </div>
+            <div class="formgrp">
+                <input type="submit" value="Complete reservation" class="submit-btn">
+            </div>
+        </form>
+    </div>
+    <script src="(14-01-24)script.js"></script>
+</body>
+</html>
